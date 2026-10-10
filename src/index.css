@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #071a2f;
+    color: #e2f0ff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: linear-gradient(135deg, #38bdf8, #a78bfa, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    background: rgba(20, 60, 100, 0.35);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(56, 189, 248, 0.10);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .glow-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .glow-btn::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+    transition: left 0.4s ease;
+  }
+
+  .glow-btn:hover::after {
+    left: 100%;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #071a2f;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #38bdf8, #818cf8);
+  border-radius: 3px;
+}
+
+/* Floating code symbols */
+.code-float {
+  position: absolute;
+  font-family: 'Fira Code', monospace;
+  color: rgba(56, 189, 248, 0.07);
+  font-size: clamp(1rem, 3vw, 2.5rem);
+  user-select: none;
+  pointer-events: none;
+  font-weight: 700;
+}
