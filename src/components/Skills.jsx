@@ -3,19 +3,22 @@ import { motion, useInView } from 'framer-motion'
 import { Server, Globe, Database, Cloud } from 'lucide-react'
 
 const skillGroups = [
-  {
-    category: 'Backend',
-    icon: Server,
-    accentColor: '#38bdf8',
-    skills: [
-      { name: 'Java',            level: 90 },
-      { name: 'Spring Boot',     level: 85 },
-      { name: 'Spring Security', level: 78 },
-      { name: 'REST APIs',       level: 88 },
-      { name: 'JWT Auth',        level: 82 },
-      { name: 'Microservices',   level: 70 },
-    ],
-  },
+{
+  category: 'Backend',
+  icon: Server,
+  accentColor: '#38bdf8',
+  skills: [
+    { name: 'Java',                  level: 90 },
+    { name: 'Spring Boot',           level: 85 },
+    { name: 'Spring Security',       level: 78 },
+    { name: 'REST APIs',             level: 88 },
+    { name: 'JWT Auth',              level: 82 },
+    { name: 'C#',                    level: 70 },
+    { name: '.NET 9',                level: 70 },
+    { name: 'ASP.NET Core Web API',  level: 70 },
+    { name: 'Microservices',         level: 65 },
+  ]
+},
   {
     category: 'Frontend',
     icon: Globe,
