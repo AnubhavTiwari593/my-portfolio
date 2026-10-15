@@ -10,6 +10,35 @@ import {
 } from 'lucide-react'
 
 const projects = [
+  ```javascript
+{
+  title: 'CNC Machine Monitoring System',
+  icon: Activity,
+  description:
+    'A machine monitoring system with simulated CNC telemetry, real-time machine status tracking, production monitoring, alarm history, downtime reports, and a React dashboard.',
+  highlights: [
+    'Background telemetry collection using .NET Worker Service',
+    'Machine status and production monitoring',
+    'REST APIs for production summaries and downtime reports',
+    'MySQL data storage with EF Core',
+    'Exception handling, structured logging, and xUnit testing',
+  ],
+  tags: [
+    'C#',
+    '.NET 9',
+    'ASP.NET Core Web API',
+    'Worker Service',
+    'EF Core',
+    'MySQL',
+    'React',
+    'xUnit',
+  ],
+  github:
+    'https://github.com/AnubhavTiwari593/CNC-Machine-Monitoring-System',
+  demo: '#',
+  accentColor: '#38bdf8',
+},
+```
   {
     title: 'Job Portal',
     icon: Briefcase,
