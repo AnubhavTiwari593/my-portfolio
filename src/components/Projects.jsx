@@ -10,7 +10,6 @@ import {
 } from 'lucide-react'
 
 const projects = [
-  ```javascript
 {
   title: 'CNC Machine Monitoring System',
   icon: Activity,
@@ -38,7 +37,6 @@ const projects = [
   demo: '#',
   accentColor: '#38bdf8',
 },
-```
   {
     title: 'Job Portal',
     icon: Briefcase,
