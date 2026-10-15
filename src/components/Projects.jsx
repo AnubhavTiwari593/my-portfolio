@@ -1,4 +1,4 @@
-
+import { Activity } from 'lucide-react';
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import {
